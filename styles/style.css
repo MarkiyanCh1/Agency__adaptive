@@ -660,7 +660,7 @@ header .active {
     .about .about__description {
         max-width: 100%;
         margin: 0 40px 30px;
-        font-size: 16px;
+        font-size: 18px;
     }
     .about .about__contact {
         width: 71%;
@@ -680,6 +680,7 @@ header .active {
     }
     .services .services__info {
         margin-bottom: 40px;
+        text-align: center;
     }
     .services .services__title {
         font-size: 38px;
@@ -694,7 +695,8 @@ header .active {
     }
     .services .services__learn {
         padding: 13px 57px;
-        font-size: 16px;
+        font-size: 18px;
+        width: 100%;
     }
     .services .services__examples {
         margin-bottom: 50px;
@@ -823,11 +825,18 @@ header .active {
         margin:0 20px 30px 20px;
     }
     .about .about__contact {
+        width: 100%;
         padding: 13px 76px;
         font-size: 19px;
     }
     .about .about__video-wrapper iframe {
         height: 260px;
+    }
+    .services {
+        padding: 55px 0 50px 0;
+    }
+    .products {
+        padding: 0 0 55px;
     }
     .products .products__header-text {
         width: 88%;
@@ -835,35 +844,53 @@ header .active {
     }
     .products .products__nav {
         display: flex;
+        flex-flow: column wrap;
         justify-content: center;
-        align-items: center;
         text-align: center;
+        margin: 35px auto 35px;
     }
     .products .products__nav .products__link {
-        margin: 0 18px;
+        padding: 10px 18px;
         font-size: 18px;
+    }
+    .products .products__block {
+        width: 25%;
+        text-align: center;
+        padding:0 2px;
+    }
+    .team {
+        padding-bottom: 55px;
+    }
+    .team .team__header {
+        margin-bottom: 30px;
     }
     .team .team__header .team__header-text {
         width: 78%;
     }
-    .team .team__name {
-        margin-bottom: 18px;
+
+    .team .team__block {
+        justify-content: center;
     }
+    .team .team__picture-lead {
+        max-width: 100%;
+        width: 45%;
+    }
+    .team .team__big-picture {
+        height: 100%
+    }
+    .team .team__about {
+        max-width: 100%;
+        padding-left: 23px;
+        text-align: center;
+    }.team .team__name {
+         margin-bottom: 18px;
+     }
     .team .team__text {
+        max-width: 100%;
         margin-bottom: 18px;
     }
     .team .team__social {
         margin-bottom: 0;
-    }
-    .team .team__picture-lead {
-        max-width: 27%;
-    }
-    .team .team__big-picture {
-        height: 311px;
-    }
-    .team .team__about {
-        max-width: 73%;
-        padding-left: 23px;
     }
     .team .team__picture-block {
         padding: 13px 9px 0 0;
@@ -872,16 +899,22 @@ header .active {
         bottom: 7px;
     }
     .team .team__photo-name p {
-        font-size: 8px;
+        font-size: 10px;
     }
     .subscribe {
-        padding: 100px 0;
+        padding: 50px 0;
+    }
+    .subscribe .subscribe__email {
+        margin-top: 0;
     }
     .subscribe .subscribe__btn {
         margin-left: 0;
         margin-top: 20px;
         max-width: 460px;
         width: 460px;
+    }
+    .contact {
+        padding: 55px 0;
     }
     .contact .contact__info {
         padding: 14px 0;
@@ -913,12 +946,10 @@ header .active {
         font-size: 38px;
         line-height: 43px;
     }
-
     .about .about__description {
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: 30px;
     }
-
     .about .about__contact {
         padding: 13px 65px;
         font-size: 17px;
@@ -927,49 +958,35 @@ header .active {
         width: 88%;
         height: 240px;
     }
-    .services {
-        padding: 80px 0 50px 0;
-    }
     .services .image__text {
         font-size: 14px;
     }
     .services .services__example {
         padding: 10px 30px 13px 15px;
     }
-    .products {
-        padding: 0 0 85px;
+    .services .services__examples {
+        margin-bottom: 20px;
     }
     .products .products__header-title {
         font-size: 40px;
     }
     .products .products__header-text {
-        font-size: 13px;
+        font-size: 16px;
         width: 88%;
         transform: translateX(32px);
-    }
-    .products .products__nav .products__link {
-        margin: 0 12px;
-        font-size: 17px;
     }
     .products .products__block {
         width: 50%;
         text-align: center;
-        padding:0 25px;
-    }
-    .team {
-        padding-bottom: 80px;
+        padding: 0 9px;
     }
     .team .team__header .team__header-text {
         width: 100%;
     }
     .team .team__picture-lead {
-        max-width: 30%;
-    }
-    .team .team__big-picture {
-        height: 259px;
+        width: 37%;
     }
     .team .team__about {
-        max-width: 70%;
         padding-left: 25px;
     }
     .team .team__name {
@@ -997,10 +1014,7 @@ header .active {
     }
     .team .team__photo-name p {
         padding-top: 2px;
-        font-size: 8px;
-    }
-    .subscribe {
-        padding: 80px 0;
+        font-size: 9px;
     }
     .subscribe .subscribe__header .subscribe__header-title {
         font-size: 37px;
@@ -1012,9 +1026,6 @@ header .active {
     }
     .subscribe .subscribe__btn {
         max-width: 100%;
-    }
-    .contact {
-        padding: 80px 0;
     }
     .contact .contact__form-input input {
         padding-inline: 30px;
@@ -1055,10 +1066,6 @@ header .active {
     }
 
     header nav {
-        width: 100%;
-        height: 57px;
-    }
-    header nav ul {
         display: none;
     }
     .about .row {
@@ -1119,13 +1126,8 @@ header .active {
         margin-bottom: 10px;
     }
     .products .products__header-text {
-        font-size: 11px;
         width: 88%;
         transform: translateX(26px);
-    }
-    .products .products__nav .products__link {
-        margin: 0 7px;
-        font-size: 15px;
     }
     .team {
         padding-bottom: 60px;
@@ -1133,14 +1135,8 @@ header .active {
     .team .team__header .team__header-text {
         font-size: 14px;
     }
-    .team .team__photos {
-        display: block;
-    }
-    .team .disable-on-mobile {
-        display: none;
-    }
-    .team .team__big-picture {
-        height: 200px;
+    .team .team__picture-lead {
+        width: 43%;
     }
     .team .team__name {
         font-size: 23px;
@@ -1216,7 +1212,6 @@ header .active {
     }
 
     .about .about__description {
-        font-size: 10px;
         margin-bottom: 13px;
     }
 
@@ -1224,13 +1219,12 @@ header .active {
         padding: 13px 65px;
         font-size: 13px;
     }
-
     .about .about__video-wrapper iframe {
         width: 100%;
         height: 171px;
     }
-    .services {
-        padding: 60px 0 50px 0;
+    .services .services__title {
+        letter-spacing: 0;
     }
     .services .services__learn {
         padding: 13px 93px;
@@ -1248,9 +1242,6 @@ header .active {
     .services .image__text {
         font-size: 16px;
     }
-    .products {
-        padding: 0 0 65px;
-    }
     .products .products__header-title {
         font-size: 24px;
     }
@@ -1258,17 +1249,10 @@ header .active {
         display: flex;
         flex-wrap: wrap;
     }
-    .products .products__nav .products__link {
-        margin: 0 5px;
-        font-size: 15px;
-    }
     .products .products__block {
         width: 50%;
         text-align: center;
         padding:0 10px;
-    }
-    .team {
-        padding-bottom: 60px;
     }
     .team .team__header .team__header-title {
         font-size: 30px;
@@ -1283,31 +1267,35 @@ header .active {
         height: 177px;
     }
     .team .team__name {
-        font-size: 21px;
+        font-size: 23px;
         margin-bottom: 12px;
     }
     .team .team__text {
         max-width: 100%;
-        font-size: 11px;
+        font-size: 13px;
         margin-bottom: 18px;
     }
     .team .team__social {
-        margin-bottom: 0;
+        margin-bottom: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
     .team .team__link {
-        margin-right: 32px;
-        font-size: 13px;
+        margin-right: 0;
+        padding-right: 40px;
+        font-size: 17px;
+    }
+    .team .team__link:nth-child(-n + 2) {
+        padding-bottom: 10px;
+    }
+    .team .team__picture-block {
+        width: 50%;
     }
     .team .team__photo-name p {
         padding-top: 6px;
-        font-size: 7px;
-    }
-    .subscribe {
-        padding: 70px 0;
+        font-size: 11px;
     }
     .subscribe .subscribe__header .subscribe__header-title {
         font-size: 26px;
@@ -1316,9 +1304,6 @@ header .active {
     .subscribe .subscribe__header .subscribe__header-text {
         margin-bottom: 0;
         font-size: 13px;
-    }
-    .contact {
-        padding: 60px 0;
     }
     .contact .contact__header {
         max-width: 100%;
@@ -1330,7 +1315,7 @@ header .active {
     .contact .contact__address-line {
         font-size: 15px;
         line-height: 1.5;
-        width: 90%;
+        width: 100%;
     }
     .footer .footer__copyright-text {
         font-size: 15px;
